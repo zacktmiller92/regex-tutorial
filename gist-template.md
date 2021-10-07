@@ -92,7 +92,27 @@ Source: http://www.rexegg.com/regex-anchors.html
 
 ### Quantifiers
 
+Quantifers go after an instance of a character or group, and define how many times you should match this character/group in your search.
+
+Quantifiers can be either "lazy" or "greedy". 
+
+Lazy: Match as many occurences of a pattern as possible
+Greedy: Match as few occurrences of a pattern as possible.
+
+| Greedy quantifier  | Lazy quantifier | Description |
+| ------------------ | --------------- | ----------- |
+| * | *? | Match zero or more times. |
+| + | +? | Match one or more times. |
+| ? | ?? | 	Match zero or one time. |
+| { n } | { n }? | 	Match exactly n times. |
+| { n ,} | { n ,}? | Match at least n times. |
+| { n , m } | { n , m }? | Match from n to m times. |
+
+Source: https://docs.microsoft.com/en-us/dotnet/standard/base-types/quantifiers-in-regular-expressions
+
 ### OR Operator
+
+
 
 ### Character Classes
 
