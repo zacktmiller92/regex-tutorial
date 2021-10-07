@@ -76,6 +76,20 @@ To make this regular expression case insensitive, add an additional range to the
 
 ### Anchors
 
+Anchors are Regex components that don't match characters.
+Instead, they explain something about the string or matching process. Here is a list of Regex anchors: 
+
+- ^: Beginning of string (or line, depending on the mode)
+- $: End of string (or line, depending on the mode)
+- \A: Beginning of string
+- \z: End of string
+- \Z: Varies a lot depending on the engine, so be careful with it
+- \b: Word boundary
+- \B: Not a word boundary
+
+Source: http://www.rexegg.com/regex-anchors.html
+
+
 ### Quantifiers
 
 ### OR Operator
