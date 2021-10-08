@@ -185,6 +185,16 @@ See the section above on [Quantifiers](#quantifiers) for more information.
 
 ### Boundaries
 
+`\b`
+
+There are three different positions that qualify as word boundaries:
+
+- Before the first character in the string, if the first character is a word character.
+- After the last character in the string, if the last character is a word character.
+- Between two characters in the string, where one is a word character and the other is not a word character.
+
+Source: https://www.regular-expressions.info/wordboundaries.html
+
 ### Back-references
 
 ### Look-ahead and Look-behind
