@@ -53,10 +53,12 @@ The section of the regular expression enclosed in the (), separated by the '|' r
 `('THIS'|'THAT')`
 
 #### BONUS: 
-To make this regular expression case insensitive, add an additional range to the character classes
+To make this regular expression case insensitive, add an additional range to the character classes, or add the 'i' flag to the end of the pattern. Either of these will perform a case insensitive search:
 
 
 `/^#?([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/`
+
+`/^#?([a-f0-9]{6}|[a-f0-9]{3})$/i`
 
 ## Table of Contents
 
@@ -81,11 +83,6 @@ Instead, they explain something about the string or matching process. Here is a 
 
 - ^: Beginning of string (or line, depending on the mode)
 - $: End of string (or line, depending on the mode)
-- \A: Beginning of string
-- \z: End of string
-- \Z: Varies a lot depending on the engine, so be careful with it
-- \b: Word boundary
-- \B: Not a word boundary
 
 Source: http://www.rexegg.com/regex-anchors.html
 
@@ -112,11 +109,54 @@ Source: https://docs.microsoft.com/en-us/dotnet/standard/base-types/quantifiers-
 
 ### OR Operator
 
+The "OR" operator is denoted by the pipe character: " | ". 
+
+When using the OR operator, you are defining two potential matches for your search:
+
+'THIS' or 'THAT'.
+
+OR conditions must be contained within parenthesis, and your regular expression will resemble this: 
+
+`('THIS'|'THAT')`
+
+Source: https://www.ocpsoft.org/tutorials/regular-expressions/or-in-regex/
 
 
 ### Character Classes
 
+Character classes, or character sets match one character. They are defined withing square brackets, and can also match a range of characters. Character classes are case sensitive. Here are a few examples:
+
+`[zack]` matches 'zack' in the doucument.
+
+`[a-z]` matches one character that can be any lowercase alphabetical character
+
+`[A-Z]` matches one character that can be any uppercase alphabetical character
+
+`[0-9]` matches one character that can be any numbers
+
+`[a-zA-Z]` matches any word that starts with any character, upper or lowercase, that ends with 'ack'. 
+
 ### Flags
+
+Flags are added at the end of your pattern, and can be combined for more specific searches. 
+
+| Flag | Description |
+| -----| ----------- |
+| d | Generate indices for substring matches |
+| g | Global search |
+| i | Case-insensitive search |
+| m | Multi-line search |
+| s | Allows . to match newline characters |
+| u | "unicode"; treat a pattern as a sequence of unicode code points |
+| y | Perform a "sticky" search that matches starting at the current position in the target string |
+
+For example, the following pattern will perform a case-insensitive search:
+
+`/pattern/i`
+
+
+Source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#advanced_searching_with_flags
+
 
 ### Grouping and Capturing
 
