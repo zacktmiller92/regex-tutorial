@@ -195,9 +195,6 @@ There are three different positions that qualify as word boundaries:
 
 Source: https://www.regular-expressions.info/wordboundaries.html
 
-### Back-references
-
-### Look-ahead and Look-behind
 
 ## Author
 
