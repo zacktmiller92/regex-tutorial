@@ -172,4 +172,8 @@ Source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Ex
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+My name is Zack Miller and I am a student at [Rutgers Coding Bootcamp](https://bootcamp.rutgers.edu/coding/). 
+
+Follow me on [github](https://github.com/zacktmiller92):
+
+https://github.com/zacktmiller92
