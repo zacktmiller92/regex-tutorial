@@ -94,6 +94,7 @@ Quantifers go after an instance of a character or group, and define how many tim
 Quantifiers can be either "lazy" or "greedy". 
 
 Lazy: Match as many occurences of a pattern as possible
+
 Greedy: Match as few occurrences of a pattern as possible.
 
 | Greedy quantifier  | Lazy quantifier | Description |
@@ -170,7 +171,17 @@ Source: https://www.regular-expressions.info/brackets.html
 
 ### Bracket Expressions
 
+Square brackets are used to match a single character.
+
+See the section above on [Character Classes](#character-classes) for more information. 
+
 ### Greedy and Lazy Match
+
+Lazy: Match as many occurences of a pattern as possible
+
+Greedy: Match as few occurrences of a pattern as possible.
+
+See the section above on [Quantifiers](#quantifiers) for more information. 
 
 ### Boundaries
 
