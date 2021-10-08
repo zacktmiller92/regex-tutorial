@@ -160,6 +160,14 @@ Source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Ex
 
 ### Grouping and Capturing
 
+Use parenthesis to group a specific part of a regular expression. This allows you to apply other regex components like quantifiers and or statements. 
+
+For example, the following regular expression will search for 'xyzxyz'. The group is contained within the parenthesis, and the quantifier searches for the grouped pattern twice. 
+
+`(xyz){2}`
+
+Source: https://www.regular-expressions.info/brackets.html
+
 ### Bracket Expressions
 
 ### Greedy and Lazy Match
